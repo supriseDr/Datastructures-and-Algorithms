@@ -36,13 +36,28 @@ module.exports = class LinkedList{
               this._firstNode = newNode;
               this._lastNode = newNode;
           } else {
-              currentFirstNode = this._firstNode;
+              let currentFirstNode = this._firstNode;
               this._firstNode = newNode;
               newNode.next = currentFirstNode;
               this._lastNode = currentFirstNode;
           }
           this._totalNode++;
           return true;
+    }
+
+    insertAtLast(data){
+        let newNode = new ListNode(data);
+        if (this._firstNode === null) {
+            this._firstNode = newNode;
+            this._lastNode = newNode;
+        } else {
+            let currentNode = this._lastNode;
+            currentNode.next = newNode;
+            newNode.prev = currentNode;
+            this._lastNode = newNode;
+        }
+        this._totalNode++;
+        return true;
     }
   
     search(){
@@ -82,8 +97,8 @@ module.exports = class LinkedList{
           }
     }
   
-    insertAfter(){
-      newNode = new ListNode(data, query);
+    insertAfter(data, query){
+      let newNode = new ListNode(data);
   
           if (this._firstNode) {
               let nextNode = null;
