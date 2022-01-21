@@ -1,3 +1,10 @@
+/**
+ * Author Suprise Doctor Nkosi
+ * twitter @supriseDr.
+ * mail : dsnnkosi@gmail.com
+ * copyright iontas technologies 2022
+ */
+
 //Import the list node module
 var ListNode = require("./list-node");
 

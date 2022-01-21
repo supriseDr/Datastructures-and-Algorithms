@@ -1,3 +1,11 @@
+/**
+ * Author Suprise Doctor Nkosi
+ * twitter @supriseDr.
+ * mail : dsnnkosi@gmail.com
+ * copyright iontas technologies 2022
+ */
+
+
 var LinkedList = require('./linked-list')
 var DoubleLinkedList = require('./doubly-linked-list')
 
